@@ -36,7 +36,7 @@ public class CommonController <E,S extends CommonService<E>>{
 		return ResponseEntity.ok().body(service.findAll(pageable));
 	}
 	
-	@GetMapping("buscar/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<?> buscarPorId(@PathVariable Long id){
 		Optional<E> optional = service.findById(id);
 		if(!optional.isPresent()) {
@@ -55,7 +55,7 @@ public class CommonController <E,S extends CommonService<E>>{
 	
 	
 	
-	@DeleteMapping("eliminar/{id}")
+	@DeleteMapping("/{id}")
 	public ResponseEntity<?> eliminar(@PathVariable Long id){
 		service.deleteById(id);
 		return ResponseEntity.noContent().build();
