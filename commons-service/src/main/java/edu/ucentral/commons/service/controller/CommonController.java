@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import edu.ucentral.commons.service.service.CommonService;
 
 
-
+//esto es un controlador comun para todos los servicios
 public class CommonController <E,S extends CommonService<E>>{
 	@Autowired
 	protected S service;
