@@ -2,8 +2,8 @@ package edu.ucentral.planeacion.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import edu.ucentral.planeacion.model.PlaneacionCurso;
+import edu.ucentral.planeacion.model.Administrador;
 
-public interface PlaneacionRepository extends JpaRepository<PlaneacionCurso, Long>{
+public interface PlaneacionRepository extends JpaRepository<Administrador, Long>{
 
 }

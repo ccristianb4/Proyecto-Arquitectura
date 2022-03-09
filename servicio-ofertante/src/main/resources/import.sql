@@ -1,0 +1,10 @@
+INSERT INTO administradores(cedula,nombre,usuario,contra,rol) VALUES ('1154646465','admin 1','admin10','admin10','Administrador');
+INSERT INTO administradores(cedula,nombre,usuario,contra,rol) VALUES ('4654654645','admin 2','admin20','admin20','Administrador');
+INSERT INTO administradores(cedula,nombre,usuario,contra,rol) VALUES ('1564851122','admin 3','admin30','admin30','Administrador');
+INSERT INTO administradores(cedula,nombre,usuario,contra,rol) VALUES ('4815212132','admin 4','admin40','admin40','Administrador');
+INSERT INTO administradores(cedula,nombre,usuario,contra,rol) VALUES ('6888421510','admin 5','admin50','admin50','Administrador');
+INSERT INTO profesores(cedula,nombre,usuario,contra,rol) VALUES ('6511556654','profe 1','profe10','profe10','Profesor');
+INSERT INTO profesores(cedula,nombre,usuario,contra,rol) VALUES ('8498449848','profe 2','profe20','profe20','Profesor');
+INSERT INTO profesores(cedula,nombre,usuario,contra,rol) VALUES ('4845516655','profe 3','profe30','profe30','Profesor');
+INSERT INTO profesores(cedula,nombre,usuario,contra,rol) VALUES ('4548648498','profe 4','profe40','profe40','Profesor');
+INSERT INTO profesores(cedula,nombre,usuario,contra,rol) VALUES ('5446848987','profe 5','profe50','profe50','Profesor');

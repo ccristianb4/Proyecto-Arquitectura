@@ -13,22 +13,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import edu.ucentral.commons.service.controller.CommonController;
-import edu.ucentral.planeacion.model.PlaneacionCurso;
+import edu.ucentral.planeacion.model.Administrador;
 import edu.ucentral.planeacion.service.PlaneacionService;
 
 @RestController
-public class PlaneacionController extends CommonController<PlaneacionCurso, PlaneacionService>{
+public class PlaneacionController extends CommonController<Administrador, PlaneacionService>{
 	@PutMapping("modificar/{id}")
-	public ResponseEntity<?> modificar(@Valid @RequestBody PlaneacionCurso planeacion,BindingResult result,@PathVariable Long id){
+	public ResponseEntity<?> modificar(@Valid @RequestBody Administrador planeacion,BindingResult result,@PathVariable Long id){
 		if(result.hasErrors()) {
 			return this.validar(result);
 		}
-		Optional<PlaneacionCurso> optional = service.findById(id);
+		Optional<Administrador> optional = service.findById(id);
 		if(!optional.isPresent()) {
 			return ResponseEntity.notFound().build();
 		}
 		
-		PlaneacionCurso planeacionDB = optional.get();
+		Administrador planeacionDB = optional.get();
 		planeacionDB.setIdentificacion(planeacion.getIdentificacion());
 		planeacionDB.setNombre_profesor(planeacion.getNombre_profesor());
 		planeacionDB.setLugar(planeacion.getLugar());
